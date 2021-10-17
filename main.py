@@ -43,3 +43,6 @@ class User(Base):
 new_user=User(id=1,username="john",email="john@gmail.com")
 
 print(new_user)
+
+
+#commit
