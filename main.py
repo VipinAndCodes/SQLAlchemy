@@ -1,4 +1,4 @@
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.orm import declarative_base,sessionmaker
 #create_engine helps to do different database task
 from sqlalchemy import Column,String,DateTime,Integer,create_engine
 from datetime import datetime
@@ -15,6 +15,7 @@ Base=declarative_base()
 #echo gives the stepwise function carrying out in the database
 engine=create_engine(connection_string,echo=True)
 
+Session=sessionmaker()
 
 """
 
